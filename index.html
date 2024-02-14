@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Sign In / Sign Up</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <div class="container">
+    <div class="form-container sign-in-container">
+      <form id="signInForm">
+        <h1>Sign In</h1>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="SignIn" type="submit">Sign In</button>
+      </form>
+    </div>
+    <div class="form-container sign-up-container">
+      <form id="signUpForm">
+        <h1>Sign Up</h1>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="SignUp" type="submit">Sign Up</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>To keep connected with us please login with your personal info</p>
+          <button class="ghost" id="signInBtn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start journey with us</p>
+          <button class="ghost" id="signUpBtn">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="Moniter">    
+  <header>
+    <h1>Attendance Monitoring System</h1>
+  </header>
+  <main>
+    <section id="clock">
+      <h2>Clock In/Out</h2>
+      <button id="clockInBtn">Clock In</button>
+      <button id="clockOutBtn">Clock Out</button>
+    </section>
+    <section id="leave">
+      <h2>Leave Management</h2>
+      <button id="applyLeaveBtn">Apply Leave</button>
+    </section>
+    <section id="reporting">
+      <h2>Reporting</h2>
+      <button id="generateReportBtn">Generate Report</button>
+    </section>
+    <p id="para"><h6 id="output"></h6></p>
+  </main>
+  <footer>
+    <p>© 2024 Attendance Monitoring System</p>
+  </footer>
+</div>  
+  <script src="script.js"></script>
+</body>
+</html>
