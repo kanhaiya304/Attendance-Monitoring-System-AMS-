@@ -4,7 +4,6 @@ const container = document.querySelector('.container');
 const para = document.getElementById('para');
 
 signUpButton.addEventListener('click', () => {
-  
   document.querySelector(".sign-in-container").style.display = "none";
   document.querySelector(".overlay-right").style.display = "none";
   document.querySelector(".sign-up-container").style.display = "block";
@@ -36,19 +35,19 @@ signUpForm.addEventListener('submit', (e) => {
   const password = signUpForm.querySelector('input[type="password"]').value;
   // Perform sign-up authentication
   console.log('Sign up:', name, email, password);
-}); 
+});
 
 const SignIn = document.querySelector(".SignIn");
 const SignUp = document.querySelector(".SignUp");
 
 SignIn.addEventListener('click', () => {
-   document.querySelector(".container").style.display = "none";
-   document.querySelector(".overlay-container").style.display = "none";
-   document.querySelector(".Moniter").style.display = "block";
+  document.querySelector(".container").style.display = "none";
+  document.querySelector(".overlay-container").style.display = "none";
+  document.querySelector(".Moniter").style.display = "block";
 });
 
 SignUp.addEventListener('click', () => {
-    alert('You Are Signup Successfully ');
+  alert('You Are Signed Up Successfully');
 });
 
 // Simulated functionality for clocking in/out
@@ -60,21 +59,21 @@ document.getElementById('clockInBtn').addEventListener('click', () => {
 document.getElementById('clockOutBtn').addEventListener('click', () => {
   alert('Clocked Out!');
   para.textContent = "You Are Clocked Out!";
-  
 });
 
 // Simulated functionality for applying leave
 document.getElementById('applyLeaveBtn').addEventListener('click', () => {
   alert('Leave Applied!');
-  para.textContent = "You Are Leave Applied!";
+  para.textContent = "You Have Applied for Leave!";
 });
 
 // Simulated functionality for generating report
 document.getElementById('generateReportBtn').addEventListener('click', () => {
   alert('Report Generated!');
-  para.textContent = "You Are Report Generated!";
+  para.textContent = "Your Report Has Been Generated!";
 });
 
+// Fetching data from API
 const apiUrl = 'https://timeapi.io/api/Time/current/ip?ipAddress=237.71.232.203';
 const outputElement = document.getElementById('output');
 
